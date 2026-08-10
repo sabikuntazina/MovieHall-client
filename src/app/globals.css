@@ -1,3 +1,29 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@layer base {
+  :root {
+    --bg-main: #18002B;
+    --bg-secondary: #24003D;
+    --bg-card: #2B0A45;
+    --primary-purple: #7200A8;
+    --bright-purple: #9B00D9;
+    --accent-pink: #FF1688;
+    --light-pink: #FF4FA3;
+    --text-muted: #C9B8D3;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.theme-gradient {
+  background: linear-gradient(135deg, #24003D, #7200A8, #FF1688);
+}
+
+.glow-pink {
+  box-shadow: 0 0 15px rgba(255, 22, 136, 0.4);
+}
 
